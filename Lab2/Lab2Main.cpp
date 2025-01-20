@@ -15,11 +15,11 @@ int main()
 	}
 	else if (guess > aInt)
 	{
-		cout << "Too high!" << endl;
+		cout << "Too high!" << "\n";
 	}
 	else
 	{
-		cout << "Correct!" << endl;
+		cout << "Correct!\n";
 	}
 
 	return 0;
