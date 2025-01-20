@@ -4,10 +4,23 @@ using namespace std;
 
 int main()
 {
-	string str1 = "";
-	char str2[] = "";
+	int guess, aInt = 10;
 
-	//TODO: something
+	cout << "Guess a number (1-100): ";
+	cin >> guess;
+
+	if (guess < aInt)
+	{
+		cout << "Too low!" << endl;
+	}
+	else if (guess > aInt)
+	{
+		cout << "Too high!" << endl;
+	}
+	else
+	{
+		cout << "Correct!" << endl;
+	}
 
 	return 0;
 }
