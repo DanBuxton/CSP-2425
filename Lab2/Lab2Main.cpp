@@ -2,32 +2,27 @@
 
 using namespace std;
 
-// **** Task 1 ****
-//int main()
-//{
-//	int guess, aInt = 10;
-//
-//	cout << "Guess a number (1-100): ";
-//	cin >> guess;
-//
-//	if (guess < aInt)
-//	{
-//		cout << "Too low!" << endl;
-//	}
-//	else if (guess > aInt)
-//	{
-//		cout << "Too high!" << "\n";
-//	}
-//	else
-//	{
-//		cout << "Correct!\n";
-//	}
-//
-//	return 0;
-//}
+void task1()
+{
+	int guess, aInt = 10;
 
-// **** Task 3 ****
-int main()
+	cout << "Guess a number (1-100): ";
+	cin >> guess;
+
+	if (guess < aInt)
+	{
+		cout << "Too low!" << endl;
+	}
+	else if (guess > aInt)
+	{
+		cout << "Too high!" << "\n";
+	}
+	else
+	{
+		cout << "Correct!\n";
+	}
+}
+void task3()
 {
 	int a = 2,
 		b = 4,
@@ -69,6 +64,13 @@ int main()
 	{
 		cout << "Test D failed" << endl;
 	}
+}
 
-	return 0;
+int main()
+{
+	cout << "Task1:\n\n";
+	task1();
+
+	cout << "\n\nTask3:\n\n";
+	task3();
 }
