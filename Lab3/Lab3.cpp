@@ -8,7 +8,7 @@ void Task1A()
 
 	for (int counter = 0; counter < 6; counter++)
 	{
-		cout << "Enter pollution level for day " << counter << " range (1-100): ";
+		cout << "Enter pollution level for day " << (counter + 1) << " range (1-100): ";
 		cin >> pollution_level[counter];
 		total = total + pollution_level[counter];
 	}
@@ -18,8 +18,8 @@ void Task1A()
 void Task1B()
 {
 	const int NUM_DAYS = 10;
-	int pollution_level[NUM_DAYS];
-	int total = 0;
+
+	int pollution_level[NUM_DAYS], total = 0;
 
 	for (int counter = 0; counter < NUM_DAYS; counter++)
 	{
@@ -28,7 +28,7 @@ void Task1B()
 		while (pollution_level[counter] < 1 || pollution_level[counter] > 100)
 		{
 			cout << "Try again" << endl;
-			cout << "Enter pollution level for day " << counter << " range (1-100): ";
+			cout << "Enter pollution level for day " << (counter + 1) << " range (1-100): ";
 			cin >> pollution_level[counter];
 		}
 		total = total + pollution_level[counter];
