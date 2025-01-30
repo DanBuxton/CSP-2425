@@ -34,7 +34,7 @@ void Task1B()
 		total = total + pollution_level[counter];
 	}
 	cout << endl;
-	cout << "The average pollution level over those 6 days was: " << total / (NUM_DAYS*1.0) << endl;
+	cout << "The average pollution level over those " << NUM_DAYS << " day(s) was: " << total / (NUM_DAYS * 1.0) << endl;
 }
 
 int main()
