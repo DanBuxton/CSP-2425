@@ -9,7 +9,7 @@ void task4();
 
 int main()
 {
-	task1();
+	task3();
 }
 
 class Animal
@@ -49,4 +49,21 @@ void task2()
 	s.name = "John Smith";
 	//s.age = 24; // ERROR: age is protected
 	//s.ssn = "N1260853"; // ERROR: ssn is private
+}
+
+class Vehicle
+{
+public:
+	Vehicle() { cout << "Vehicle constructor\n"; }
+	~Vehicle() { cout << "Vehicle Destructor\n"; }
+};
+class Car : public Vehicle
+{
+public:
+	Car() { cout << "Car constructor\n"; }
+	~Car() { cout << "Car Destructor\n"; }
+};
+void task3()
+{
+	Car c;
 }
