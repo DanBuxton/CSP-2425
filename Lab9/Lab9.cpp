@@ -33,3 +33,20 @@ void task1()
 	Dog g;
 	g.sound();
 }
+
+class Person
+{
+	string ssn;
+protected:
+	int age;
+public:
+	string name;
+};
+class Student : public Person {};
+void task2()
+{
+	Student s;
+	s.name = "John Smith";
+	//s.age = 24; // ERROR: age is protected
+	//s.ssn = "N1260853"; // ERROR: ssn is private
+}
