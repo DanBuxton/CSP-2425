@@ -9,7 +9,7 @@ void task4();
 
 int main()
 {
-	task3();
+	task4();
 }
 
 class Animal
@@ -66,4 +66,25 @@ public:
 void task3()
 {
 	Car c;
+}
+
+class Grandparent
+{
+public:
+	void show() { cout << "Grandparent\n"; }
+};
+class Parent : public Grandparent
+{
+public:
+	void show() { cout << "Parent\n"; }
+};
+class Child : public Parent
+{
+public:
+	void show() { cout << "Child\n"; }
+};
+void task4()
+{
+	Child c;
+	c.show();
 }
